@@ -20,8 +20,7 @@ import { theme } from './theme';
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: tailwindStylesheetUrl },
-    { rel: "script", href: "https://cdn.splitbee.io/sb.js" },
+    { rel: "stylesheet", href: tailwindStylesheetUrl }
   ];
 };
 
@@ -50,9 +49,9 @@ export default function App() {
         </head>
         <body>
           <NavBar />
-          <Header />
           <Outlet />
           <ScrollRestoration />
+          {/* <script data-token="9DHX5Q3TXNUZ" data-no-cookie  src="https://cdn.splitbee.io/sb.js" /> */}
           <Scripts />
           <LiveReload />
           <Footer />

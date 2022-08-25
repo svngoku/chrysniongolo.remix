@@ -16,8 +16,8 @@ export default function NavBar() {
                                 ['Courses', '/courses'],
                                 ['Playground', '/playground'],
                             ].map(([title, url]) => (
-                                <li key={title} className="px-5 py-2">
-                                    <Link to={url}>
+                                <li  className="px-5 py-2">
+                                    <Link to={url} key={title} prefetch="intent">
                                         <a className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary">{title}</a>
                                     </Link>
                                 </li>

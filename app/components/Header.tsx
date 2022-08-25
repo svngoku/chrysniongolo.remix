@@ -7,12 +7,14 @@ export default function Header() {
                 <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl lg: mb-24 h-auto pt-24 lg:min-h-[40rem] lg:pb-12 lg:mb-64">
                     <div className="col-span-full mb-12 lg:mb-0 px-10 lg:col-span-5 lg:col-start-7">
                     <img className="h-76 w-full object-contain max-h-50vh scale-100" 
-                        alt="Illustration of a snowboard" 
+                        alt="Illustration of my emoji" 
                         src="https://d1fdloi71mui9q.cloudfront.net/QEL9PkV7SV6j63pINHrK_4pFr9whWqSVqOlY2"
-                        sizes="(max-width: 1023px) 50vw, (min-width: 1024px) and (max-width: 1279px) 50vw, (min-width: 1280px) 900px" />
+                        sizes="(max-width: 1023px) 50vw, (min-width: 1024px) and (max-width: 1279px) 50vw, (min-width: 1280px) 900px" 
+                        style={{ opacity: 1, transform: "none"}}
+                    />
                     </div>
                     <div className="mx-8 col-span-full pt-6 lg:col-start-1 lg:row-start-1 lg:flex lg:h-full lg:flex-col lg:col-span-5">
-                        <div className="flex flex-auto flex-col">
+                        <div className="flex flex-auto flex-col" style={{ opacity: 1}}>
                             <div>
                                 <h2 className="font-mono leading-tight text-3xl md:text-4xl text-black dark:text-dark">Hi, I'm Chrys Fé-Marty NIONGOLO, a Full-Stack and Big Data Engineer</h2>
                             </div>

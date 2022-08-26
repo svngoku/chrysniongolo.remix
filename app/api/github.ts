@@ -10,6 +10,7 @@ export type Profile = {
     public_gists: number;
     followers: number;
     following: number;
+    repositories?: Repository[];
 }
 
 export type Repository = {
@@ -35,4 +36,20 @@ export async function getGists() : Promise<Gist[]> {
     const response = await fetch('https://api.github.com/users/svngoku/gists');
     const gists : Gist[] = await response.json();
     return gists;
+}
+
+
+export async function getProfile() : Promise<Profile> {
+    const response = await fetch('https://api.github.com/users/svngoku');
+    const profile : Profile = await response.json();
+    return profile;
+}
+
+export async function CardRepository()  {
+    const repositories : Repository[] = await getRepositories();
+    return repositories.map(repository => {
+        const { name } = repository;
+        const response = `https://github-readme-stats.vercel.app/api/pin/?username=svngoku&repo=go-for-ts-devs${name}`;
+        console.log(response);
+    })
 }

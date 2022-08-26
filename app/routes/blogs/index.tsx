@@ -9,14 +9,14 @@ export const loader : LoaderFunction = async () => {
     return getDatabaseById(id);
 }
 export default function BlogsIndex() {
-    const page = useLoaderData();
+    const database = useLoaderData();
     return (
             <div className="relative mx-10vw">
                 <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
                     <h1>Blogs</h1>
                     <div>
                         {
-
+                            
                         }
                     </div>
                 </div>
